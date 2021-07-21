@@ -1,0 +1,208 @@
+/*Fuentes personalizadas para titulos y subtitulos */
+
+@font-face {
+    font-family: "fuentetitulo";
+    src: url("Fuente/Staatliches-Regular.ttf");
+}
+
+@font-face {
+    font-family:"nombreseries";
+    src: url("Fuente/JuliusSansOne-Regular.ttf")
+}
+
+body {
+   margin:0;
+   width: 100%;
+}
+
+section {
+    height: 1100px;
+}
+/*Barra de navegacion */
+
+nav {
+    background-color:#fff;
+    height: 40px;
+    padding: 2px;
+    margin:0px;
+}
+
+nav div {
+    display:inline;    
+}
+
+.imagenesbarra {
+    display:flex;
+    float: right; /* Float provoca un posicionamiento flotante es decir el elemento se coloca flotandod dentro de la caja que lo contiene */ 
+    height:35px;
+}
+
+/* DIV Bienvenida */
+
+
+
+.bienvenida {
+    height: 600px;
+    background: -webkit-linear-gradient(left, #ffc8d7, #ffd9e3);
+    text-align: center;
+    vertical-align: middle;
+
+    
+}
+
+/* TITULOS Y SUBTITULOS */ 
+
+h1 {
+    margin: auto;
+    font-family:"fuentetitulo";
+    font-size: 120px;
+    letter-spacing: 5vw;
+    padding-top: 150px;
+    text-shadow: 1px 1px 2px #fb0044;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.parrafo1 {
+    margin:0px;
+    font-size: 20px; 
+}
+
+
+
+h3 {
+    font-family: "nombreseries";
+    margin:0;
+    font-size: 15px;
+    padding-bottom: 50px;
+    letter-spacing: 0.5vw;
+}
+
+.contenedor1 {
+  
+ width: 100%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows: repeat (2,1fr);
+ height: 400px;
+ 
+}
+
+.divseries {
+    height: auto;
+    width: auto;
+    margin:0;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.botones {
+    height: auto;
+    width: auto;
+    font-size: 10px;
+    border: 0px;
+    color: #000000;
+    text-align: center;
+    
+
+}
+
+.botones:hover {
+    border: 2px #000 groove;
+    color: #ffff;
+}
+
+@media all and (max-width:800px) {
+   
+    .parrafo1 {
+        padding-bottom: 10px;
+    }
+
+
+    h3 {
+        font-size: 13px;
+    }
+}
+
+
+@media all and (max-width: 500px){
+    .bienvenida {
+        height:300px;
+    }
+    
+    .contenedor1{
+        display: block;  
+    }
+    .divseries{
+        height: 100px;
+    }
+
+h1 {
+    font-size:100px;
+    padding-top: 20px;
+}
+
+}
+
+@media all and (max-width: 400px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    .parrafo1 {
+        font-size: 20px ;
+    }
+
+    .bienvenida {
+        height: auto;
+    }
+    .divseries{
+        height: 100px;
+    }
+}
+  
+
+@media all and (max-width: 350px) {
+    .contenedor1{
+        width: 100%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+    
+    .parrafo1 {
+        font-size: 15px ;
+    }
+    .divseries{
+        height: 200px;
+    }
+}
+
+@media all and (max-width:140px){
+    .bienvenida {
+        height:200px;
+    }
+    
+    .contenedor1{
+        display: block;
+    
+}
+h1 {
+    font-size:20px;
+    padding-top: 20px;
+}
+h3 {
+    font-size: 20px;
+}
+}
